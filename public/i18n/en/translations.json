@@ -1,0 +1,9 @@
+{
+    "app": {
+        "title": "InsightEat",
+        "language": {
+            "french": "French",
+            "english": "English"
+        }
+    }
+}

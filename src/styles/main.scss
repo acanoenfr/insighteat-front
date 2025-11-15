@@ -1,0 +1,12 @@
+@use './abstracts/variables';
+@use './abstracts/mixins';
+
+@import './base/reset';
+@import './base/typography';
+@import './base/globals';
+
+@import './layout/header';
+
+@import './pages/auth';
+@import './pages/home';
+@import './pages/errors';
