@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
-import { AppBar, Box, Toolbar, Typography } from "@mui/material"
+import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material"
 
-import { LanguageSwitcher } from "@/shared/components/LanguageSwitcher"
+import { useAuthStore } from "@/shared/store/auth.store"
 
 export function Layout() {
     const { t } = useTranslation()
+    const { logout } = useAuthStore()
 
     return (
         <Box display="flex" flexDirection="column" minHeight="100vh">
@@ -20,7 +21,14 @@ export function Layout() {
                         {t('app.title')}
                     </Typography>
 
-                    <LanguageSwitcher />
+                    <Button
+                        color="error"
+                        variant="contained"
+                        sx={{ marginLeft: 1 }}
+                        onClick={logout}
+                    >
+                        {t('app.actions.sign-out')}
+                    </Button>
                 </Toolbar>
             </AppBar>
         </Box>

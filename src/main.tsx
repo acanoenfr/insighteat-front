@@ -8,6 +8,8 @@ import { ThemeProvider, CssBaseline } from "@mui/material"
 import { router } from "./app/router";
 import { queryClient } from "./app/queryClient"
 import { theme } from "./app/theme"
+
+import './app/i18n'
 import "./styles/main.scss"
 
 ReactDOM

@@ -1,0 +1,69 @@
+{
+    "app": {
+        "title": "InsightEat",
+        "language": {
+            "french": "French",
+            "english": "English"
+        },
+        "actions": {
+            "sign-out": "Sign out"
+        }
+    },
+    "auth": {
+        "sign-in": {
+            "title": "Sign in",
+            "fields": {
+                "username": {
+                    "label": "Username"
+                },
+                "password": {
+                    "label": "Password"
+                }
+            },
+            "errors": {
+                "invalid-credentials": "Invalid credentials"
+            },
+            "actions": {
+                "submit": "Login",
+                "create-account": "Create an account"
+            },
+            "no-account": "Not have an account ?"
+        },
+        "sign_up": {
+            "title": "Sign up",
+            "fields": {
+                "gender": {
+                    "label": "Gender",
+                    "options": {
+                        "male": "Male",
+                        "female": "Female",
+                        "other": "Other"
+                    }
+                },
+                "given-name": {
+                    "label": "Given name"
+                },
+                "family-name": {
+                    "label": "Family name"
+                },
+                "email": {
+                    "label": "E-mail address"
+                },
+                "password": {
+                    "label": "Password"
+                },
+                "password-confirmation": {
+                    "label": "Password confirmation"
+                }
+            },
+            "errors": {
+                "unexpected-error": "An error is occurred during sign up process, please retry later."
+            },
+            "actions": {
+                "submit": "Register",
+                "sign-in-account": "Sign in"
+            },
+            "have-account": "Already registered ?"
+        }
+    }
+}

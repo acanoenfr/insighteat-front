@@ -1,0 +1,69 @@
+{
+    "app": {
+        "title": "InsightEat",
+        "language": {
+            "french": "Français",
+            "english": "Anglais"
+        },
+        "actions": {
+            "sign-out": "Déconnexion"
+        }
+    },
+    "auth": {
+        "sign-in": {
+            "title": "Connexion",
+            "fields": {
+                "username": {
+                    "label": "Nom d'utilisateur"
+                },
+                "password": {
+                    "label": "Mot de passe"
+                }
+            },
+            "errors": {
+                "invalid-credentials": "Identifiants invalides"
+            },
+            "actions": {
+                "submit": "Se connecter",
+                "create-account": "Créer un compte"
+            },
+            "no-account": "Pas encore de compte ?"
+        },
+        "sign-up": {
+            "title": "Inscription",
+            "fields": {
+                "gender": {
+                    "label": "Genre",
+                    "options": {
+                        "male": "Homme",
+                        "female": "Femme",
+                        "other": "Autre"
+                    }
+                },
+                "given-name": {
+                    "label": "Prénom"
+                },
+                "family-name": {
+                    "label": "Nom de famille"
+                },
+                "email": {
+                    "label": "Adresse e-mail"
+                },
+                "password": {
+                    "label": "Mot de passe"
+                },
+                "password-confirmation": {
+                    "label": "Confirmation du mot de passe"
+                }
+            },
+            "errors": {
+                "unexpected-error": "Une erreur est survenue durant le processus d'inscription, veuillez réessayer."
+            },
+            "actions": {
+                "submit": "S'inscrire",
+                "sign-in-account": "Se connecter"
+            },
+            "have-account": "Déjà inscrit ?"
+        }
+    }
+}
