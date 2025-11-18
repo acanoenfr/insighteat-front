@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from "react"
 import { useNavigate, useLocation } from "react-router-dom"
 
-import { Alert, Box, Button, FormControl, InputLabel, Link, MenuItem, Paper, Select, Stack, TextField, Typography } from "@mui/material"
+import { Alert, Box, Button, FormControl, FormControlLabel, FormLabel, InputLabel, Link, MenuItem, Paper, Radio, RadioGroup, Select, Stack, TextField, Typography } from "@mui/material"
 import { Field, useForm } from "@tanstack/react-form"
 import { useTranslation } from "react-i18next"
 
@@ -29,7 +29,7 @@ export function SignUpPage() {
                 familyName: value.familyName,
                 email: value.email,
                 plainPassword: value.password
-            })
+            }, value.passwordConfirmation)
         })
     const [error, setError] = useState<string>()
 
@@ -39,10 +39,16 @@ export function SignUpPage() {
         form.handleSubmit()
     }
 
-    const handleSignUp = async (data: SignUpRequest) => {
+    const handleSignUp = async (data: SignUpRequest, passwordConfirmation: string) => {
         setError(undefined)
 
-        try {
+        if (data.plainPassword !== passwordConfirmation) {
+            setError(t('auth.sign-up.errors.diff-passwords-error'))
+            return;
+        }
+
+        try
+        {
             await signUp(data)
             navigate(from, { replace: true })
         }
@@ -74,16 +80,29 @@ export function SignUpPage() {
                                 name="gender"
                                 form={form}
                                 children={({ state, handleChange, handleBlur }) => (
-                                    <FormControl fullWidth onBlur={handleBlur}>
-                                        <InputLabel>{t('auth.sign-up.fields.gender.label')}</InputLabel>
-                                        <Select
+                                    <FormControl required fullWidth onBlur={handleBlur}>
+                                        <FormLabel>{t('auth.sign-up.fields.gender.label')}</FormLabel>
+                                        <RadioGroup
+                                            row
                                             value={state.value}
                                             onChange={(e) => handleChange(e.target.value)}
                                         >
-                                            <MenuItem value="Male">{t('auth.sign-up.fields.gender.label.options.male')}</MenuItem>
-                                            <MenuItem value="Female">{t('auth.sign-up.fields.gender.label.options.female')}</MenuItem>
-                                            <MenuItem value="Other">{t('auth.sign-up.fields.gender.label.options.other')}</MenuItem>
-                                        </Select>
+                                            <FormControlLabel
+                                                control={<Radio />}
+                                                label={t('auth.sign-up.fields.gender.options.male')}
+                                                value="Male"
+                                            />
+                                            <FormControlLabel
+                                                control={<Radio />}
+                                                label={t('auth.sign-up.fields.gender.options.female')}
+                                                value="Female"
+                                            />
+                                            <FormControlLabel
+                                                control={<Radio />}
+                                                label={t('auth.sign-up.fields.gender.options.other')}
+                                                value="Other"
+                                            />
+                                        </RadioGroup>
                                     </FormControl>
                                 )}
                             />
@@ -94,6 +113,7 @@ export function SignUpPage() {
                                 children={({ state, handleChange, handleBlur }) => (
                                     <TextField
                                         label={t('auth.sign-up.fields.given-name.label')}
+                                        required
                                         fullWidth
                                         value={state.value}
                                         onChange={(e) => handleChange(e.target.value)}
@@ -108,6 +128,7 @@ export function SignUpPage() {
                                 children={({ state, handleChange, handleBlur }) => (
                                     <TextField
                                         label={t('auth.sign-up.fields.family-name.label')}
+                                        required
                                         fullWidth
                                         value={state.value}
                                         onChange={(e) => handleChange(e.target.value)}
@@ -122,6 +143,7 @@ export function SignUpPage() {
                                 children={({ state, handleChange, handleBlur }) => (
                                     <TextField
                                         label={t('auth.sign-up.fields.email.label')}
+                                        required
                                         fullWidth
                                         value={state.value}
                                         onChange={(e) => handleChange(e.target.value)}
@@ -137,6 +159,7 @@ export function SignUpPage() {
                                     <TextField
                                         label={t('auth.sign-up.fields.password.label')}
                                         type="password"
+                                        required
                                         fullWidth
                                         value={state.value}
                                         onChange={(e) => handleChange(e.target.value)}
@@ -152,6 +175,7 @@ export function SignUpPage() {
                                     <TextField
                                         label={t('auth.sign-up.fields.password-confirmation.label')}
                                         type="password"
+                                        required
                                         fullWidth
                                         value={state.value}
                                         onChange={(e) => handleChange(e.target.value)}

@@ -57,7 +57,8 @@
                 }
             },
             "errors": {
-                "unexpected-error": "Une erreur est survenue durant le processus d'inscription, veuillez réessayer."
+                "unexpected-error": "Une erreur est survenue durant le processus d'inscription, veuillez réessayer.",
+                "diff-passwords-error": "Le mot de passe est différent de sa confirmation."
             },
             "actions": {
                 "submit": "S'inscrire",
