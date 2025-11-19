@@ -7,6 +7,7 @@ import { NotFoundPage } from "@/features/errors/pages/NotFoundPage";
 
 import { RequireAuth } from "./RequireAuth";
 import { Layout } from "./Layout";
+import { ProductPage } from "@/features/products/pages/ProductPage";
 
 export const router = createBrowserRouter([
     { path: '/sign_in', element: <SignInPage /> },
@@ -18,7 +19,8 @@ export const router = createBrowserRouter([
             {
                 element: <Layout />,
                 children: [
-                    { index: true, element: <HomePage /> }
+                    { index: true, element: <HomePage /> },
+                    { path: '/p/:code', element: <ProductPage /> }
                 ]
             }
         ]
