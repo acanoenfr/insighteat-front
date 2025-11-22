@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 import { useTranslation } from "react-i18next"
-import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material"
+import { AppBar, Box, Button, Container, Toolbar, Typography } from "@mui/material"
 
 import { useAuthStore } from "@/shared/store/auth.store"
 
@@ -31,6 +31,10 @@ export function Layout() {
                     </Button>
                 </Toolbar>
             </AppBar>
+
+            <Container maxWidth="md" sx={{ py: 3, flexGrow: 1 }}>
+                <Outlet />
+            </Container>
         </Box>
     )
 }

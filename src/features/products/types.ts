@@ -12,11 +12,16 @@ export type ProductResponse = {
     novaGroup: number
 }
 
+export type ProductImage = {
+    fr?: number
+    en?: number
+}
+
 export type ProductImages = {
-    ingredients: Map<string, number>
-    packaging: Map<string, number>
-    front: Map<string, number>
-    nutrition: Map<string, number>
+    ingredients: ProductImage
+    packaging: ProductImage
+    front: ProductImage
+    nutrition: ProductImage
 }
 
 export type ProductData = {

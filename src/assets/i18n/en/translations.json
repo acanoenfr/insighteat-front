@@ -66,5 +66,8 @@
             },
             "have-account": "Already registered ?"
         }
+    },
+    "product": {
+        "not-found": "Product not found."
     }
 }
