@@ -68,6 +68,66 @@
         }
     },
     "product": {
-        "not-found": "Product not found."
+        "not-found": "Product not found.",
+        "ingredients": {
+            "title": "Ingredients"
+        },
+        "nutrition": {
+            "title": "Nutrition",
+            "per": "Nutritional values for",
+            "components": {
+                "negative": {
+                    "label": "Negative components"
+                },
+                "positive": {
+                    "label": "Positive components"
+                },
+                "types": {
+                    "fiber": "Fiber",
+                    "fruits-vegetables-legumes": "Fruits, vegetables & legumes",
+                    "energy-from-saturated-fat": "Energy",
+                    "sugars": "Sugars",
+                    "saturated-fat-ratio": "Saturated fats",
+                    "salt": "Salt"
+                }
+            }
+        },
+        "nutriscore": {
+            "title": "Nutri-Score",
+            "score": "Score",
+            "negative": "Negative points",
+            "positive": "Positive points",
+            "flags": {
+                "cheese": "Cheese",
+                "water": "Water",
+                "beverage": "Beverage",
+                "red-meat": "Red meat products",
+                "fat-oil-nuts": "Fats / Oil / Nuts"
+            },
+            "positive-nutrients": {
+                "label": "Positive nutrients taken into account",
+                "types": {
+                    "fiber": "Fiber",
+                    "fruits-vegetables-legumes": "Fruits, vegetables & legumes"
+                }
+            }
+        },
+        "ecoscore": {
+            "title": "Eco-Score",
+            "grade": "Score",
+            "description": "The Eco-score summarizes the overall environmental impact of the product.",
+            "not-applicable": "Not applicable"
+        },
+        "nova": {
+            "title": "NOVA classification",
+            "description": "The NOVA classification describes the degree of industrial processing applied to the product.",
+            "not-applicable": "Not applicable",
+            "types": {
+                "1": "Unprocessed or minimally processed foods.",
+                "2": "Processed culinary ingredients (oil, butter, sugar…).",
+                "3": "Processed foods (bread, cheeses, simple canned foods…).",
+                "4": "Ultra-processed foods (industrial formulations)."
+            }
+        }
     }
 }

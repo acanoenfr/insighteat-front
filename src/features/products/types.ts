@@ -41,8 +41,8 @@ export type ProductData = {
 }
 
 export type ProductComponents = {
-    negative: ProductComponent
-    positive: ProductComponent
+    negative: ProductComponent[]
+    positive: ProductComponent[]
 }
 
 export type ProductComponent = {

@@ -68,6 +68,66 @@
         }
     },
     "product": {
-        "not-found": "Produit non trouvé."
+        "not-found": "Produit non trouvé.",
+        "ingredients": {
+            "title": "Ingrédients"
+        },
+        "nutrition": {
+            "title": "Nutrition",
+            "per": "Données nutritionnelles pour",
+            "components": {
+                "negative": {
+                    "label": "Composants pénalisants"
+                },
+                "positive": {
+                    "label": "Composants bénéfiques"
+                },
+                "types": {
+                    "fiber": "Fibres",
+                    "fruits-vegetables-legumes": "Fruits, légumes & légumes secs",
+                    "energy-from-saturated-fat": "Energie",
+                    "sugars": "Sucres",
+                    "saturated-fat-ratio": "Matières grasses",
+                    "salt": "Sel"
+                }
+            }
+        },
+        "nutriscore": {
+            "title": "Nutri-Score",
+            "score": "Score",
+            "negative": "Points négatifs",
+            "positive": "Points positifs",
+            "flags": {
+                "cheese": "Fromage",
+                "water": "Eau",
+                "beverage": "Boisson",
+                "red-meat": "Produits à base de viande rouge",
+                "fat-oil-nuts": "Matières grasses / Huile / Noix"
+            },
+            "positive-nutrients": {
+                "label": "Nutriments positifs pris en compte",
+                "types": {
+                    "fiber": "Fibres",
+                    "fruits-vegetables-legumes": "Fruits, légumes & légumes secs"
+                }
+            }
+        },
+        "ecoscore": {
+            "title": "Eco-Score",
+            "grade": "Score",
+            "description": "L'éco-score synthétise l'impact environnemental global du produit.",
+            "not-applicable": "Non applicable"
+        },
+        "nova": {
+            "title": "Classification NOVA",
+            "description": "La classification NOVA décrit le degré de transformation industrielle appliqué au produit.",
+            "not-applicable": "Non applicable",
+            "types": {
+                "1": "Aliments non transformés ou peu transformés.",
+                "2": "Ingrédients culinaires transformés (huile, beurre, sucre…).",
+                "3": "Aliments transformés (pain, fromages, conserves simples…).",
+                "4": "Aliments ultra-transformés (formulations industrielles)."
+            }
+        }
     }
 }
