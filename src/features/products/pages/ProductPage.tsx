@@ -57,7 +57,7 @@ export function ProductPage() {
                             {t(`product.nutrition.components.types.${formatComponentId(c.id)}`)}{' '}
                         </Typography>
                         <Typography component="span" variant="caption" color="text.secondary">
-                            {c.value} {c.unit}
+                            {c.value}{c.unit !== 'number' ? ` ${c.unit}` : ''}
                         </Typography>
                     </Box>
                 ))}
