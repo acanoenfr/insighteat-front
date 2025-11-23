@@ -104,7 +104,7 @@ export function ProductPage() {
                                 >
                                     <Box
                                         component="img"
-                                        src={`${env.VITE_PRODUCT_BASE_URL}${data.imageUrl}front_fr.${data.images.front['fr']}.full.jpg`}
+                                        src={`${data.imageUrl}front_fr.${data.images.front['fr']}.full.jpg`}
                                         alt={data.name}
                                         sx={{
                                             maxWidth: '100%',
