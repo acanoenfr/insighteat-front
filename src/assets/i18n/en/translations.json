@@ -7,6 +7,9 @@
         },
         "actions": {
             "sign-out": "Sign out"
+        },
+        "errors": {
+            "camera-permission": "Access to the camera has been denied.\rThe scanner will not work until you re-enable\rthe permission in your browser settings."
         }
     },
     "auth": {
@@ -65,6 +68,20 @@
                 "sign-in-account": "Sign in"
             },
             "have-account": "Already registered ?"
+        }
+    },
+    "home": {
+        "ean-search": {
+            "title": "Search a product (by barcode)",
+            "label": "Enter a barcode"
+        },
+        "ean-scan": {
+            "title": "Scan a product",
+            "description": "Center the barcode on the camera below.",
+            "camera-loading": "Loading camera...",
+            "errors": {
+                "camera-permission": "Camera access unavailable, please try again later."
+            }
         }
     },
     "product": {

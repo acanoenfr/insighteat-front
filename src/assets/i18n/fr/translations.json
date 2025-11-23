@@ -7,6 +7,9 @@
         },
         "actions": {
             "sign-out": "Déconnexion"
+        },
+        "errors": {
+            "camera-permission": "L'accès à la caméra a été refusé.\rLe scanner ne fonctionnera pas tant que vous n'aurez pas réactivé\rla permission dans les paramètres du navigateur."
         }
     },
     "auth": {
@@ -65,6 +68,20 @@
                 "sign-in-account": "Se connecter"
             },
             "have-account": "Déjà inscrit ?"
+        }
+    },
+    "home": {
+        "ean-search": {
+            "title": "Rechercher un produit (par code-barres)",
+            "label": "Saisissez un code-barre"
+        },
+        "ean-scan": {
+            "title": "Scanner un produit",
+            "description": "Centrer le code-barre sur la caméra ci-dessous",
+            "camera-loading": "Chargement de la caméra...",
+            "errors": {
+                "camera-permission": "Accès à la caméra impossible, merci de réessayer plus tard."
+            }
         }
     },
     "product": {
