@@ -161,9 +161,6 @@ export function ProductPage() {
                                             {t('product.nutriscore.not-applicable')}
                                         </Typography>
                                     )}
-                                    <Typography variant="body2" color="text.secondary">
-                                        {t('product.nutriscore.score')}: {data.data.score}
-                                    </Typography>
 
                                     <Box mt={1} display="flex" flexWrap="wrap" gap={0.5}>
                                         {data.data.isCheese && <Chip size="small" label={t('product.nutriscore.flags.cheese')} />}
@@ -189,7 +186,7 @@ export function ProductPage() {
                             </Grid>
 
                             <Grid item xs={12} md={9} sx={{ width: '100%' }}>
-                                <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
+                                <Typography variant="subtitle2" color="text.secondary" gutterBottom>
                                     {t('product.nutrition.per')}{' '}
                                     {data.nutritionDataPer}
                                 </Typography>
