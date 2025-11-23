@@ -102,10 +102,14 @@
                 "types": {
                     "fiber": "Fiber",
                     "fruits-vegetables-legumes": "Fruits, vegetables & legumes",
+                    "energy": "Energy",
                     "energy-from-saturated-fat": "Energy",
                     "sugars": "Sugars",
+                    "saturated-fat": "Saturated fats",
                     "saturated-fat-ratio": "Saturated fats",
-                    "salt": "Salt"
+                    "salt": "Salt",
+                    "proteins": "Proteins",
+                    "non-nutritive-sweeteners": "Non-nutritive sweeteners"
                 }
             }
         },
@@ -125,7 +129,8 @@
                 "label": "Positive nutrients taken into account",
                 "types": {
                     "fiber": "Fiber",
-                    "fruits-vegetables-legumes": "Fruits, vegetables & legumes"
+                    "fruits-vegetables-legumes": "Fruits, vegetables & legumes",
+                    "proteins": "Proteins"
                 }
             }
         },

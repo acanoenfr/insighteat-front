@@ -102,10 +102,14 @@
                 "types": {
                     "fiber": "Fibres",
                     "fruits-vegetables-legumes": "Fruits, légumes & légumes secs",
+                    "energy": "Energie",
                     "energy-from-saturated-fat": "Energie",
                     "sugars": "Sucres",
+                    "saturated-fat": "Matières grasses",
                     "saturated-fat-ratio": "Matières grasses",
-                    "salt": "Sel"
+                    "salt": "Sel",
+                    "proteins": "Protéines",
+                    "non-nutritive-sweeteners": "Edulcorants non-nutritifs"
                 }
             }
         },
@@ -125,7 +129,8 @@
                 "label": "Nutriments positifs pris en compte",
                 "types": {
                     "fiber": "Fibres",
-                    "fruits-vegetables-legumes": "Fruits, légumes & légumes secs"
+                    "fruits-vegetables-legumes": "Fruits, légumes & légumes secs",
+                    "proteins": "Protéines"
                 }
             }
         },
